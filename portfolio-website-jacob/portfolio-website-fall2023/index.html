@@ -3,21 +3,219 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta http-equiv="X-UA-Compatable" content="IE-edge">
+  <meta name="viewport" content="width-device-width, inital-scale=1.0" />
   <!-- UPDATE TITLE : <Your Name's> Portfolio  -->
-  <title> NAME-HERE Portfolio</title>
-
+  <title>Jacob's Portfolio</title>
   <!-- ADD LINKS TO YOUR CSS STYLE SHEETS HERE -->
-
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
   <!-- TODO : FOLLOW THE TUTORIAL AND CREATE YOUR SITE -->
-
-
-
+  <nav id="desktop-nav">
+    <div class="logo">Jacob Jordan</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#About">About</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Jacob</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="togglemenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#About" onclick="togglemenu()">About</a></li>
+        <li><a href="#Experience" onclick="togglemenu()">Experience</a></li>
+        <li><a href="#Projects" onclick="togglemenu()">Projects</a></li>
+        <li><a href="#Contact" onclick="togglemenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="./assets/checkmark.png" alt="Profile Pic">
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hi, I'm</p>
+      <hi class="title">Jacob</hi>
+      <p class="section_text_p2"> Welcome to my Portfolio</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
+        Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#Contact'"> Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png"
+          alt="My Linkin Profile"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/jacob-jordan-61a7712ab'" />
+        <img src="./assets/github.png"
+          alt="My GitHub Profile"
+          class="icon"
+          onclick="location.href='https://github.com/Mr-Zamboni'" />
+      </div>
+    </div>
+  </section>
+  <section id="About">
+    <p class="section_text_p1">Get to Know More</p>
+    <hi class="title">About Me</hi>
+    <div class="section-container">
+      <div class="section_pic-container">
+        <img src="./assets/graduate.svg"
+        alt="Profile Picture"
+        class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" 
+              alt="Experience Icon" 
+              class="icon">
+            <h3>Experienced</h3>
+            <p>2+ years <br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" 
+              alt="Education Icon" 
+              class="icon">
+            <h3>Education</h3>
+            <p>Bachelors of Science<br />in Computer Engineering</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>A Student at Mississippi State University graduating with a Bachelor of Science in Computer
+            Engineering<br /> and a minor in Mathematics. Currently a Senior and will offically graduate in the Winter of
+            2024.</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+    onclick="location.href='./#Experience'">
+  </section>
+  <section id="Experience">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="abour-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">On the Programming Front</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="experience" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience" class="icon" />
+              <div>
+                <h3>Assembly</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience" class="icon" />
+              <div>
+                <h3>Arduino</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience" class="icon" />
+              <div>
+                <h3>Verilog</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+    onclick="location.href='./#Projects'">
+  </section>
+  <section id="Projects">
+    <p class="section_text_p1">Check Out Our Capstone Project</p>
+    <hi class="p-title">Camp-Tenna:</hi>
+    <div class="experience-details-container">
+      <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/galtronic-GP1210-06830.jpg" alt="project1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">The Antenna</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://galtronics.com/product/gp1210-06830/">
+          Antenna Specs</button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/modem.jpg" alt="project1" class="project-img-2" />
+        </div>
+        <h2 class="experience-sub-title project-title">The Modem</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/AirLink-RV50X-Datasheet.pdf')">
+          Modem Specs</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+    onclick="location.href='./#Contact'">
+  </section>
+  <section id="Contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="email_icon" class="icon contact-icon"/>
+        <p><a href=mailto:jacobwjordan2@gmail.com>jacobwjordan2@gmail.com</a></p>
+        <img src="./assets/linkedin.png" alt="My Linkin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/jacob-jordan-61a7712ab'" />
+        <p><a href=mailto:jacobwjordan2@gmail.com>LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <Footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+        <li><a href="#About">About</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Jacob Jordan. All Rights Reserved.</p>
+  </section>
   <!-- ADD THE LINK TO YOUR SCRIPT HERE -->
+  <script src="script.js"></script>
 </body>
 
 </html>
